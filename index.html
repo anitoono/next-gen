@@ -139,24 +139,5 @@ return false;
 });
 //]]>
 </script>
-<!doctype html>
-    <script>
-        (function() {
-            const redirectUrl = "https://anitoono.blogspot.com/"; // Change this to your desired URL
-            // Function to check if developer tools are open
-            function detectDevTools() {
-                const threshold = 160; // A typical threshold to detect opened dev tools
-                const devToolsOpen = window.outerWidth - window.innerWidth > threshold || window.outerHeight - window.innerHeight > threshold;
-                if (devToolsOpen) {
-                    window.location.replace(redirectUrl);
-                }
-            }
-            // Periodically check for developer tools
-            setInterval(detectDevTools, 1000);
-            // Initial check
-            detectDevTools();
-        })();
-    </script>
-</!doctype>
 </body>
 </html>
